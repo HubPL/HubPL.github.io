@@ -39,6 +39,10 @@ nav a:hover {
     color: #b00510;
 }
 
+.separator {
+    color: #e30613;
+}
+
 main {
     padding: 2rem;
     background-color: #f9f9f9;
@@ -95,10 +99,28 @@ footer {
     nav {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .separator {
+        display: none;
     }
     
     .items {
         flex-direction: column;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr;
     }
 }
 
